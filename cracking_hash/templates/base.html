@@ -1,0 +1,24 @@
+{% load static %}
+{% get_static_prefix as STATIC %}
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Pentest</title>
+    <link rel="stylesheet" href="{{ STATIC }}css/bootstrap.min.css" type="text/css">
+</head>
+<body id="bodiku">
+  <div class="hero-unit">
+    <h1>Pentest</h1>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span12">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>
